@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-limit-mem
+  labels:
+    purpose: demo
+spec:
+  containers:
+  - name: webapp
+    image: nginx:alpine
+    ports:
+    - containerPort: 80
